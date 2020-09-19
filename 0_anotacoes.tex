@@ -1,0 +1,60 @@
+\documentclass[11pt]{article}%Template: https://www.overleaf.com/latex/templates/chapter-review-notes/npqqbrvfkwqh
+\usepackage[utf8]{inputenc}
+\usepackage[portuguese]{babel}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd}
+\usepackage{multirow,booktabs}
+\usepackage[table]{xcolor}
+\usepackage{fullpage}
+\usepackage{lastpage}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{mathrsfs}
+\usepackage{wrapfig}
+\usepackage{setspace}
+\usepackage{calc}
+\usepackage{multicol}
+\usepackage{cancel}
+\usepackage[retainorgcmds]{IEEEtrantools}
+\usepackage[margin=3cm]{geometry}
+\usepackage{amsmath}
+\newlength{\tabcont}
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+\usepackage{empheq}
+\usepackage{framed}
+\usepackage[most]{tcolorbox}
+\usepackage{xcolor}
+\colorlet{shadecolor}{orange!15}
+\parindent 0in
+\parskip 12pt
+\geometry{margin=1in, headsep=0.25in}
+\theoremstyle{definition}
+\newtheorem{defn}{Definition}
+\newtheorem{reg}{Rule}
+\newtheorem{exer}{Exercise}
+\newtheorem{note}{Note}
+\begin{document}
+%\setcounter{section}{8}
+
+%% INICIA LA DEFINICION DE COMANDOS %%}
+\newcommand{\nota}[1]{% escribe una nota en rojo que aparece en el pdf
+\textcolor{red}{
+#1
+}}
+\newcommand{\titulo}{Anotações de Aula}
+\newcommand{\griffiths}{Eletrodinâmica 3a Ed. J. Griffiths}
+
+\title{\titulo}
+
+\thispagestyle{empty}
+
+\begin{center}
+{\LARGE \bf \titulo}\\
+{\large Eletrodinâmica 3a Ed. J. Griffiths}\\
+Edital 045-2020 EP-USP
+\end{center}
+
+\input{2_Poynting.tex}
+
+\input{0_Apagar.tex}% texto do documento original
+\end{document}
